@@ -1,0 +1,22 @@
+{
+  "name": "clipboard-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ax-cd/clipboard-landing-page-challenge.git"
+  },
+  "author": "Ax-cd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ax-cd/clipboard-landing-page-challenge/issues"
+  },
+  "homepage": "https://github.com/Ax-cd/clipboard-landing-page-challenge#readme",
+  "dependencies": {
+    "sass": "^1.52.1"
+  }
+}
