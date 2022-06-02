@@ -1,1 +1,18 @@
 @use "../base" as *;
+@use "../components/buttons";
+
+header {
+    // border: 2px solid red;
+    background: url("../../public/images/bg-header-mobile.png") no-repeat;
+    text-align: center;
+    padding: 1rem 1.25rem 6rem;
+}
+.header-img {
+    width: 30%;
+    height: 30%;
+    margin: 8rem 0 5rem;
+}
+header > p {
+    border: 2px solid transparent;
+    margin: 1.5rem 0 2rem;
+}
