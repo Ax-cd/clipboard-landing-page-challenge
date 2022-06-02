@@ -1,0 +1,25 @@
+@use "../base" as *;
+.btn {
+    border: none;
+    border-radius: 20px;
+    width: 95%;
+    padding: 1rem;
+    margin: 1rem 0;
+    color: white;
+    font-weight: 600;
+    &--green {
+        background-color: $cyan;
+        box-shadow: 0 3px 0 hsl(171, 82%, 32%);
+        &:hover {
+            background-color: hsl(171, 66%, 60%);
+            color: hs;
+        }
+    }
+    &--blue {
+        background-color: $light-blue;
+        box-shadow: 0 3px 0 hsl(233, 39%, 47%);
+        &:hover {
+            background-color: hsl(233, 39%, 70%);
+        }
+    }
+}
