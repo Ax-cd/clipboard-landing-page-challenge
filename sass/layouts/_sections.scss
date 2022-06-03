@@ -1,26 +1,26 @@
 @use "../base" as *;
 
 section {
-    border: 1px solid blue;
     padding: 0 1.5rem;
     margin: 3.5rem 0 5rem;
 }
 .section-1, .section-2 {
-    &>img { //img rule repetition
+    &>img {
         width: 100%;
         margin: 0 auto 4rem;
     }
-    &, p {
+}
+.section-1, .section-2, .section-3 {
+    & p {
         margin: 1.5rem 0 5rem;
     }
 }
+.section-2 {
+    margin-top: 15rem;
+}
 .section-3 {
-    &>img { //img rule repetition
+    &>img {
         margin: 0 auto 4rem;
-    }
-    & p {
-        // border: 2px solid red;
-        margin: 1.5rem 0 5rem;
     }
 }
 .section-4 {
@@ -29,7 +29,6 @@ section {
     align-items: center;
     justify-content: space-evenly;
     & img {
-        // border: 2px solid green;
         margin: 3rem auto;
     }
 }
@@ -37,7 +36,6 @@ section {
     margin-bottom: 10rem;
     &>h2 {
         margin: 1rem;
-        border: 1px solid orchid;
     }
     & p {
         margin: 1.5rem 0 2rem;
