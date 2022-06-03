@@ -70,7 +70,6 @@ header > p {
 }
 
 section {
-  border: 1px solid blue;
   padding: 0 1.5rem;
   margin: 3.5rem 0 5rem;
 }
@@ -79,15 +78,17 @@ section {
   width: 100%;
   margin: 0 auto 4rem;
 }
-.section-1, .section-1 p, .section-2, .section-2 p {
+
+.section-1 p, .section-2 p, .section-3 p {
   margin: 1.5rem 0 5rem;
+}
+
+.section-2 {
+  margin-top: 15rem;
 }
 
 .section-3 > img {
   margin: 0 auto 4rem;
-}
-.section-3 p {
-  margin: 1.5rem 0 5rem;
 }
 
 .section-4 {
@@ -105,10 +106,46 @@ section {
 }
 .section-5 > h2 {
   margin: 1rem;
-  border: 1px solid orchid;
 }
 .section-5 p {
   margin: 1.5rem 0 2rem;
+}
+
+footer {
+  background-color: hsl(201deg, 11%, 96%);
+  color: hsl(210deg, 10%, 33%);
+  font-weight: 600;
+  padding: 2rem 0 4rem;
+}
+footer > img {
+  width: 10%;
+  margin: 2rem auto;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  margin-bottom: 2rem;
+}
+
+li {
+  list-style: none;
+  padding: 1rem;
+}
+
+li:hover {
+  color: hsl(171deg, 66%, 44%);
+}
+
+.socials {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

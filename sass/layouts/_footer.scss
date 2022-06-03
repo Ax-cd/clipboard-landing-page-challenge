@@ -1,1 +1,37 @@
 @use "../base" as *;
+
+footer {
+    background-color: hsl(201, 11%, 96%);
+    color: $dark-blue;
+    font-weight: 600;
+    padding: 2rem 0 4rem;
+    &>img {
+        width: 10%;
+        margin: 2rem auto;
+    }
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+}
+.menu{
+    margin-bottom: 2rem;
+}
+li {
+    list-style: none;
+    padding: 1rem;
+}
+li:hover {
+    color: $cyan;
+}
+.socials {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+}
+// img:hover { //change svg color
+//     // filter: var($cyan);
+//     fill: $cyan;
+// }
