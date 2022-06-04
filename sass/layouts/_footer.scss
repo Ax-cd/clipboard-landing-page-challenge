@@ -2,8 +2,6 @@
 
 footer {
     background-color: hsl(201, 11%, 96%);
-    color: $dark-blue;
-    font-weight: 600;
     padding: 2rem 0 4rem;
     &>img {
         width: 10%;
@@ -17,12 +15,17 @@ footer {
 .menu{
     margin-bottom: 2rem;
 }
+a {
+    color: $dark-blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    color: $cyan;
+}
 li {
     list-style: none;
     padding: 1rem;
-}
-li:hover {
-    color: $cyan;
 }
 .socials {
     width: 50%;

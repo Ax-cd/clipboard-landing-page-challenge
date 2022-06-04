@@ -113,8 +113,6 @@ section {
 
 footer {
   background-color: hsl(201deg, 11%, 96%);
-  color: hsl(210deg, 10%, 33%);
-  font-weight: 600;
   padding: 2rem 0 4rem;
 }
 footer > img {
@@ -131,13 +129,19 @@ footer > img {
   margin-bottom: 2rem;
 }
 
+a {
+  color: hsl(210deg, 10%, 33%);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: hsl(171deg, 66%, 44%);
+}
+
 li {
   list-style: none;
   padding: 1rem;
-}
-
-li:hover {
-  color: hsl(171deg, 66%, 44%);
 }
 
 .socials {
