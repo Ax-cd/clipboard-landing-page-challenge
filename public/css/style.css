@@ -52,10 +52,20 @@ p {
 .btn--blue:hover {
   background-color: hsl(233deg, 39%, 70%);
 }
+@media screen and (min-width: 60em) {
+  .btn {
+    width: 20%;
+  }
+}
 
 header {
   background: url("../../public/images/bg-header-mobile.png") no-repeat;
   padding: 1rem 1.25rem 6rem;
+}
+@media screen and (min-width: 60em) {
+  header {
+    background: url("../../public/images/bg-header-desktop.png") no-repeat;
+  }
 }
 
 .header-img {
@@ -63,10 +73,22 @@ header {
   height: 30%;
   margin: 8rem 0 5rem;
 }
+@media screen and (min-width: 60em) {
+  .header-img {
+    width: 10%;
+    height: 10%;
+    margin-bottom: 3rem;
+  }
+}
 
 header > p {
   border: 2px solid transparent;
   margin: 1.5rem 0 2rem;
+}
+@media screen and (min-width: 60em) {
+  header > p {
+    margin: 1rem 17rem 2rem;
+  }
 }
 
 section {

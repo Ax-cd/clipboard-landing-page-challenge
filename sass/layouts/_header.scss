@@ -2,16 +2,26 @@
 @use "../components/buttons";
 
 header {
-  // border: 2px solid red;
   background: url("../../public/images/bg-header-mobile.png") no-repeat;
   padding: 1rem 1.25rem 6rem;
+  @include desktop {
+    background: url("../../public/images/bg-header-desktop.png") no-repeat;
+  }
 }
 .header-img {
   width: 30%;
   height: 30%;
   margin: 8rem 0 5rem;
+  @include desktop {
+    width: 10%;
+    height: 10%;
+    margin-bottom: 3rem;
+  }
 }
 header > p {
   border: 2px solid transparent;
   margin: 1.5rem 0 2rem;
+  @include desktop {
+    margin: 1rem 17rem 2rem;
+  }
 }
