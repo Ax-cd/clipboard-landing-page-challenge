@@ -22,4 +22,7 @@
             background-color: hsl(233, 39%, 70%);
         }
     }
+    @include desktop {
+        width: 20%;
+    }
 }
