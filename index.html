@@ -9,10 +9,10 @@
 </head>
 <body>
   <main>
-    <header>
-      <img class="header-img" src="./public/images/logo.svg" alt="Clipboard logo">        
-      <h1>A history of everything you copy</h1>
-      <p>Clipboard allows you to track and organize everything you 
+    <header class="header">
+      <img class="header__img" src="./public/images/logo.svg" alt="Clipboard logo">        
+      <h1 class="header__title">A history of everything you copy</h1>
+      <p class="header__p">Clipboard allows you to track and organize everything you 
       copy. Instantly access your clipboard on all your devices.</p>
       <button class="btn btn--green">Download for iOS</button>
       <button class="btn btn--blue">Download for Mac</button>
@@ -24,12 +24,14 @@
         meaning you can access your snippets immediately on all your 
         devices. Our Mac and iOS apps will help you organize everything.</p>
       <img src="./public/images/image-computer.png" alt="Access you snippets on your computer">
-      <h3>Quick Search</h3>
-      <p>Easily search your snippets by content, category, web address, application, and more.</p>
-      <h3>iCloud Sync</h3>
-      <p>Instantly saves and syncs snippets across all your devices.</p>
-      <h3>Complete History</h3>
-      <p>Retrieve any snippets from the first moment you started using the app.</p>
+      <div>
+        <h3>Quick Search</h3>
+        <p>Easily search your snippets by content, category, web address, application, and more.</p>
+        <h3>iCloud Sync</h3>
+        <p>Instantly saves and syncs snippets across all your devices.</p>
+        <h3>Complete History</h3>
+        <p>Retrieve any snippets from the first moment you started using the app.</p>  
+      </div>   
     </section>
 
     <section class="section-2">
@@ -39,20 +41,28 @@
     </section>
 
     <section class="section-3">
-      <h2>Supercharge your workflow</h2>
-      <p>We’ve got the tools to boost your productivity.</p>
+      <div class="section-3__item1">
+        <h2>Supercharge your workflow</h2>
+        <p>We’ve got the tools to boost your productivity.</p>  
+      </div>
 
-      <img src="public/images/icon-blacklist.svg" alt="">
-      <h3>Create blacklists</h3>
-      <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
-      
-      <img src="public/images/icon-text.svg" alt="">
-      <h3>Plain text snippets</h3>
-      <p>Remove unwanted formatting from copied text for a consistent look.</p>
-      
-      <img src="public/images/icon-preview.svg" alt="">
-      <h3>Sneak preview</h3>
-      <p>Quick preview of all snippets on your Clipboard for easy access.</p>
+      <div class="section-3__item2">
+        <div class="section-3__item2--1">
+          <img src="public/images/icon-blacklist.svg" alt="">
+          <h3>Create blacklists</h3>
+          <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>  
+        </div>
+        <div class="section-3__item2--2">
+          <img src="public/images/icon-text.svg" alt="">
+          <h3>Plain text snippets</h3>
+          <p>Remove unwanted formatting from copied text for a consistent look.</p>
+        </div>
+        <div class="section-3__item2--3">
+          <img src="public/images/icon-preview.svg" alt="">
+          <h3>Sneak preview</h3>
+          <p>Quick preview of all snippets on your Clipboard for easy access.</p>          
+        </div>  
+      </div>
     </section>
 
     <section class="section-4">
@@ -71,17 +81,17 @@
       <button class="btn btn--blue">Download for Mac</button>
     </section>
 
-    <footer>
-      <img src="public/images/logo.svg" alt="Clipboard logo">
-      <nav class="navigation">
-        <ul class="menu">
+    <footer class="footer">
+      <img class="footer__img" src="public/images/logo.svg" alt="Clipboard logo">
+      <nav class="footer__navigation">
+        <ul class="footer__navigation--menu">
           <li><a href="#">FAQs</a></li>
           <li><a href="#">Contact Us</a></li>
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Press Kit</a></li>
           <li><a href="#">Install Guide</a></li>
         </ul>
-        <div class="socials">
+        <div class="footer__navigation--socials">
           <a href="#"><img src="public/images/icon-facebook.svg" alt="Facebook"></a>
           <a href="#"><img src="public/images/icon-twitter.svg" alt="Twitter"></a>
           <a href="#"><img src="public/images/icon-instagram.svg" alt="Instagram"></a>
