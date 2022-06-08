@@ -260,7 +260,6 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-
 a:hover {
   color: hsl(171deg, 66%, 44%);
 }
@@ -268,6 +267,10 @@ a:hover {
 li {
   list-style: none;
   padding: 1rem;
+}
+
+img:hover {
+  filter: invert(50%) sepia(99%) saturate(335%) hue-rotate(121deg) brightness(101%) contrast(87%);
 }
 
 /*# sourceMappingURL=style.css.map */
