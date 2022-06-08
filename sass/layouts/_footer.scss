@@ -50,15 +50,14 @@ a {
     color: $dark-blue;
     text-decoration: none;
     cursor: pointer;
-}
-a:hover {
-    color: $cyan;
+    &:hover {
+        color: $cyan;
+    }
 }
 li {
     list-style: none;
     padding: 1rem;
 }
-// img:hover { //change svg color
-//     // filter: var($cyan);
-//     fill: $cyan;
-// }
+img:hover{
+    filter: invert(50%) sepia(99%) saturate(335%) hue-rotate(121deg) brightness(101%) contrast(87%);
+}
