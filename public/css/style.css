@@ -43,7 +43,6 @@ p {
 }
 .btn--green:hover {
   background-color: hsl(171deg, 66%, 60%);
-  color: hs;
 }
 .btn--blue {
   background-color: hsl(233deg, 100%, 69%);
@@ -91,19 +90,38 @@ p {
   }
 }
 
-/*mobile*/
 section {
   padding: 0 1.5rem;
   margin: 3.5rem 0 5rem;
 }
 
-.section-1 > img, .section-2 > img {
+.section-1 > img {
   width: 100%;
   margin: 0 auto 4rem;
 }
 @media screen and (min-width: 60em) {
-  .section-1 > img, .section-2 > img {
-    width: 85%;
+  .section-1 {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 20% 80%;
+    grid-auto-flow: column;
+  }
+  .section-1__description {
+    grid-column: span 5;
+  }
+  .section-1__description--p {
+    padding: 0 30rem 15rem;
+  }
+  .section-1__img {
+    margin-top: 20rem;
+    grid-column: span 3;
+  }
+  .section-1__advantages {
+    grid-column: span 2;
+    text-align: left;
+    padding: 0 10rem 0 10rem;
+    margin-top: 5rem;
   }
 }
 
@@ -114,9 +132,16 @@ section {
 .section-2 {
   margin-top: 15rem;
 }
+.section-2 > img {
+  width: 100%;
+  margin: 0 auto 4rem;
+}
 @media screen and (min-width: 60em) {
   .section-2 p {
     margin: 2rem 35rem 5rem;
+  }
+  .section-2 > img {
+    width: 85%;
   }
 }
 
@@ -127,12 +152,22 @@ section {
   .section-3 {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .section-3 > img {
     margin: 0 auto 6rem;
   }
   .section-3__item2 {
     display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 80%;
+    padding: 4rem 0;
+    margin: 0 auto;
+    line-height: 2;
+  }
+  .section-3__item2 img {
+    margin-bottom: 2rem;
   }
   .section-3__item2 p {
     margin: 0 2rem;
@@ -165,8 +200,12 @@ section {
 .section-5 p {
   margin: 1.5rem 0 2rem;
 }
+@media screen and (min-width: 60em) {
+  .section-5 p {
+    margin: 1.5rem 28rem 2rem;
+  }
+}
 
-/*desktop*/
 .footer {
   background-color: hsl(201deg, 11%, 96%);
   padding: 2rem 0 4rem;

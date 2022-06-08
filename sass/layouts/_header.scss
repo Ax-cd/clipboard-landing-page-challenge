@@ -21,7 +21,8 @@
     border: 2px solid transparent;
     margin: 1.5rem 0 2rem;
     @include desktop {
-      margin: 1rem 17rem 2rem;
+      padding: 0;
+      margin: 1rem 32rem 2rem;
     }
   }
 }

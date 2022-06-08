@@ -1,13 +1,35 @@
 @use "../base" as *;
-
 section {
     padding: 0 1.5rem;
     margin: 3.5rem 0 5rem;
 }
-.section-1, .section-2 {
+.section-1 { //DONE
     &>img {
         width: 100%;
         margin: 0 auto 4rem;
+    }
+    @include desktop {
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 20% 80%;
+        grid-auto-flow: column;
+        &__description {
+            grid-column: span 5;
+            &--p {
+                padding: 0 30rem 15rem;
+            }
+        }
+        &__img {
+            margin-top: 20rem;
+            grid-column: span 3;
+        }
+        &__advantages {
+            grid-column: span 2;
+            text-align: left;
+            padding: 0 10rem 0 10rem;
+            margin-top: 5rem;
+        }
     }
 }
 .section-1, .section-2, .section-3 {
@@ -15,15 +37,58 @@ section {
         margin: 1.5rem 0 5rem;
     }
 }
-.section-2 {
+.section-2 { //DONE
     margin-top: 15rem;
+    &>img {
+        width: 100%;
+        margin: 0 auto 4rem;
+    }
+    @include desktop {
+        & p {
+            margin: 2rem 35rem 5rem;
+        }
+        &>img {
+            width: 85%;
+        }
+    }
 }
-.section-3 {
+.section-3 { //TO DO
     &>img {
         margin: 0 auto 4rem;
     }
+    @include desktop {
+        // border: 2px solid forestgreen;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &>img {
+            margin: 0 auto 6rem;
+        }
+        // &__item1 {
+        //     border: 2px solid red;
+        // }
+        &__item2 {
+            // border: 2px solid rebeccapurple;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            width: 80%;
+            padding: 4rem 0;
+            margin: 0 auto;
+            line-height: 2;
+            & img {
+                // border: 2px solid red;
+                margin-bottom: 2rem;
+            }
+            & p {
+                // border: 1px solid blue;
+                margin: 0 2rem;
+            }
+        }
+    }
 }
-.section-4 {
+
+.section-4 { //DONE
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,13 +96,23 @@ section {
     & img {
         margin: 3rem auto;
     }
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        padding: 5rem 0;
+    }
 }
-.section-5 {
+.section-5 { // DONE
     margin-bottom: 10rem;
     &>h2 {
         margin: 1rem;
     }
     & p {
         margin: 1.5rem 0 2rem;
+    }
+    @include desktop {
+        & p {
+            margin: 1.5rem 28rem 2rem;
+        }
     }
 }
