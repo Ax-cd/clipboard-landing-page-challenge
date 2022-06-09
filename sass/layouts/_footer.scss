@@ -43,6 +43,9 @@
         }
         &__socials {
             width: 10%;
+            & img:hover {
+                filter: invert(50%) sepia(99%) saturate(335%) hue-rotate(121deg) brightness(101%) contrast(87%);
+            }
         }
     }
 }
@@ -57,7 +60,4 @@ a {
 li {
     list-style: none;
     padding: 1rem;
-}
-img:hover{
-    filter: invert(50%) sepia(99%) saturate(335%) hue-rotate(121deg) brightness(101%) contrast(87%);
 }
