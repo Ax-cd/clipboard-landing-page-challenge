@@ -23,6 +23,7 @@ section {
         &__img {
             margin-top: 20rem;
             grid-column: span 3;
+            transform: translateX(-3.6rem);
         }
         &__advantages {
             grid-column: span 2;
