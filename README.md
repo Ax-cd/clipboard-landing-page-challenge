@@ -15,6 +15,7 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Acknowledgement](#acknowledgement)
 
 ## Overview
 
@@ -64,3 +65,7 @@ I learned about the property grid-auto-flow, which was useful for styling the li
 - GitHub - [Ax-cd](https://github.com/Ax-cd)
 - Frontend Mentor - [@Ax-cd](https://www.frontendmentor.io/profile/Ax-cd)
 - Instagram - [@ax.coding](https://www.instagram.com/ax.coding/)
+
+## Acknowledgement
+
+Vanza Setia gave me helpful feedback on my solution: [Frontend Mentor Profile](https://www.frontendmentor.io/profile/vanzasetia)
