@@ -1,10 +1,10 @@
 @use "../base" as *;
 @use "../components/buttons";
 .header {
-  background: url("../../public/images/bg-header-mobile.png") no-repeat;
+  background: url("../../public/images/bg-header-mobile.png") no-repeat top center;
   padding: 1rem 1.25rem 6rem;
-  @include desktop {
-    background: url("../../public/images/bg-header-desktop.png") no-repeat;
+  @include tablet {
+    background: url("../../public/images/bg-header-desktop.png") no-repeat top center;
   }
   &__img {
     width: 30%;
